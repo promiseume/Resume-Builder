@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
 
-export default function Button(buttonName:string) {
+interface buttonProps {
+  value: string;
+  buttonType: "submit" | "reset" | "button" | undefined;
+  primary?: boolean;
+  secondary?: boolean;
+  autoFocus?: boolean | undefined;
+  disabled?: boolean | undefined;
+}
+export default function Button({
+  value,
+  buttonType,
+  primary,
+  secondary,
+  autoFocus,
+  disabled
+}: buttonProps) {
   return (
     <div>
-         <button>{buttonName}</button>
+      <button type={buttonType}>{value}</button>
     </div>
-  )
+  );
 }
