@@ -7,10 +7,12 @@ interface buttonProps {
   secondary?: boolean;
   autoFocus?: boolean | undefined;
   disabled?: boolean | undefined;
+  icon?:string;
 }
 export default function Button({
   value,
   buttonType,
+  icon,
   primary,
   secondary,
   autoFocus,
