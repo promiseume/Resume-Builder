@@ -1,8 +1,10 @@
 import React from 'react'
 import styles from './home.module.css'
+import ClassicTemplate from '@/templates/classicTemplate'
+import {resumeData} from '@/templates/resumeData'
 
 export default function Home() {
-  return (
+  return ( 
     <>
       <section className={styles.header}>
       <h3>Build Your
@@ -24,6 +26,7 @@ export default function Home() {
         <p>Craft the perfect resume to impress employers and get hired faster</p>
         </div>
       </div>
+      <ClassicTemplate resumeData={resumeData} />
     </>
   )
 }

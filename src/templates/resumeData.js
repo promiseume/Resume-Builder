@@ -1,4 +1,4 @@
-const resumeData = {
+export const resumeData = {
   name: "Sarah Hannan",
   title: "Frontend Developer",
   contacts: {

@@ -7,7 +7,7 @@ export default function ClassicTemplate ({ resumeData }:{resumeData:ResumeType})
   return (
     <div className={styles.resumeContainer}>
       <header className={styles.header}>
-        <h1>{name}</h1>
+        <h1 className='nameTag' >{name}</h1>
         <p>{title}</p>
         <div className={styles.contactInfo}>
           <p>Phone: {contacts.phone}</p>
@@ -20,26 +20,26 @@ export default function ClassicTemplate ({ resumeData }:{resumeData:ResumeType})
 
 
       <section>
-        <h2>Experience</h2>
+        <h2 className='headerTag'>Experience</h2>
         {experience.map((job, index) => (
-          <div key={index}>
-            <h3>{job.role} - {job.company}</h3>
-            <p>{job.years}</p>
-            <ul>
-              {job.responsibilities.map((item, idx) => (
-                <li key={idx}>{item}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+  <div key={index}>
+    <h3 className='roleTag'>{job.role} - {job.company}</h3>
+    <p>{job.location} | {job.years}</p>
+    <ul className='listContainer'>
+      {job.responsibilities.map((item, idx) => (
+        <li key={idx}>{item}</li>
+      ))}
+    </ul>
+  </div>
+))}
       </section>
       <section>
-        <h2>Skills</h2>
+        <h2 className='headerTag'>Skills</h2>
         <p>{skills.join(', ')}</p>
       </section>
 
       <section>
-        <h2>Education</h2>
+        <h2 className='headerTag'>Education</h2>
         <p>{education}</p>
       </section>
     </div>
