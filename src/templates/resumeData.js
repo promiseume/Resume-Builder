@@ -6,8 +6,10 @@ export const resumeData = {
     email: "sarah.hannan@example.com",
     linkedin: "https://www.linkedin.com/in/sarahhannan",
     github: "https://github.com/sarahhannan",
-    website: "https://sarahhannan.dev"
+    website: "https://sarahhannan.dev",
   },
+  summary:
+    "Passionate and detail-oriented Frontend Developer with 3 years of experience building responsive, user-centric web applications using modern JavaScript frameworks like React and Next.js. Adept at translating UI/UX designs into functional, high-performance interfaces, and collaborating closely with backend teams to deliver seamless user experiences. Skilled in writing clean, maintainable code and continuously exploring new technologies to improve frontend performance and scalability. Committed to delivering accessible and visually engaging products that meet both user needs and business goals.",
   experience: [
     {
       role: "Frontend Developer",
@@ -17,8 +19,8 @@ export const resumeData = {
       responsibilities: [
         "Built reusable components in React",
         "Implemented responsive designs for mobile and web",
-        "Collaborated closely with backend and design teams"
-      ]
+        "Collaborated closely with backend and design teams",
+      ],
     },
     {
       role: "Junior Web Developer",
@@ -28,10 +30,10 @@ export const resumeData = {
       responsibilities: [
         "Assisted in building marketing websites",
         "Maintained company blogs and landing pages",
-        "Learned and contributed to internal React projects"
-      ]
-    }
+        "Learned and contributed to internal React projects",
+      ],
+    },
   ],
   skills: ["React", "JavaScript", "CSS", "Next.js", "HTML5", "Git"],
-  education: "B.Sc. Computer Science - XYZ University"
+  education: "B.Sc. Computer Science - XYZ University",
 };

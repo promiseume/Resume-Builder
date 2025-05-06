@@ -1,6 +1,7 @@
 export type ResumeType ={
         name: string;
         title: string;
+        summary:string;
         contacts: {
           phone: string;
           email: string;
